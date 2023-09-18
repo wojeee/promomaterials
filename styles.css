@@ -99,35 +99,39 @@ button:hover {
 }
 
 /* ... Previous CSS contents ... */
-
 .informer-section {
-    margin-top: 50px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.informer-wrapper {
+.informer-inner {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the columns */
 }
 
 .informer-column {
-    flex: 1;
-    max-width: 48%;
-    margin-bottom: 20px;
+    flex-basis: 48%; /* This will ensure that two columns fit side by side */
 }
 
 .informer-box {
     margin-bottom: 20px;
-    background-color: #f7f9fc;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .informer-box h3 {
-    font-size: 1.2em;
+    margin-top: 0;
+    font-size: 18px;
     margin-bottom: 10px;
 }
+
+
 
 /* CTA Section */
 .cta {
@@ -181,11 +185,18 @@ header {
         padding: 20px;
     }
 
-    /* Set the informer tools section to one column */
-    .informer-section .informer-tools {
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
+    .informer-inner {
+        flex-direction: column;
     }
+    .informer-column {
+        flex-basis: 100%; /* Making the column full width on mobile */
+    }
+
+    .informer-box iframe {
+        max-width: 100%;  /* Setting a smaller max width for mobile */
+        max-height: auto;  /* Adjusting height proportionally */
+    }
+}
 
     /* Partner Links section */
     .partner-links ul.html-links-list {
@@ -207,4 +218,3 @@ header {
         max-width: 100%;
         height: auto;
     }
-}
