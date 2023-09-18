@@ -101,32 +101,18 @@ button:hover {
 /* ... Previous CSS contents ... */
 
 .informer-section {
-    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #f4f4f4; /* Some light background for distinction, optional */
 }
 
-.informer-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.informer-tools {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
 }
 
-.informer-column {
-    flex: 1;
-    max-width: 48%;
-    margin-bottom: 20px;
-}
-
-.informer-box {
-    margin-bottom: 20px;
-    background-color: #f7f9fc;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.informer-box h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+.informer-item {
+    margin: 10px 0;
 }
 
 /* CTA Section */
