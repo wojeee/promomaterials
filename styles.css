@@ -189,7 +189,7 @@ header {
         flex-direction: column;
     }
     .informer-column {
-        flex-basis: 100%; /* Making the column full width on mobile */
+        flex-basis: 50%; /* Making the column full width on mobile */
     }
 
     .informer-box iframe {
