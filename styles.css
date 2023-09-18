@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#c6d7e8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* ... Previous CSS contents ... */
+
+.top-banner {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.top-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.partner-links, .banners {
+    margin-top: 40px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.banner-item {
+    margin-top: 20px;
+}
+
+/* ... Previous CSS contents ... */
+
+.partner-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.html-links-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;  /* Adjust this if you want the combined width of columns to be lesser */
+}
+
+.html-links-list li {
+    flex: 1;
+    margin-bottom: 15px;
+    min-width: calc(50% - 10px);  /* Taking 10px into account for any potential margin or padding */
+}
+
+.html-links-list a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+}
+
+.html-links-list a:hover {
+    text-decoration: underline;
+}
+
+/* ... Previous CSS contents ... */
+
+.informer-section {
+    margin-top: 50px;
+}
+
+.informer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.informer-column {
+    flex: 1;
+    max-width: 48%;
+    margin-bottom: 20px;
+}
+
+.informer-box {
+    margin-bottom: 20px;
+    background-color: #f7f9fc;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.informer-box h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.cta button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.cta button:hover {
+    background-color: #388E3C;
+}
+
+/* Banner Footer */
+.banner-footer {
+    margin-top: 40px;  /* Adjust as per requirement */
+    text-align: center;
+}
+
+.banner-footer img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    color: #000;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+/* ... Previous styles ... */
+
+/* Responsive: Mobile view */
+@media screen and (max-width: 767px) {
+    /* Adjust container for padding */
+    .container {
+        padding: 20px;
+    }
+
+    /* Set the informer tools section to one column */
+    .informer-section .informer-tools {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    /* Partner Links section */
+    .partner-links ul.html-links-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust the input and button for better visibility */
+    .partner-links input {
+        width: 80%; /* or whatever width makes sense for you */
+        margin-bottom: 10px;
+    }
+
+    .partner-links button {
+        width: 100%;
+    }
+
+    /* Banner section */
+    .banner-footer img {
+        max-width: 100%;
+        height: auto;
+    }
+}
